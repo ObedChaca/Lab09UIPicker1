@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D1100EF264439C200166FD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1100EE264439C200166FD4 /* AppDelegate.swift */; };
+		7D1100F4264439C200166FD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D1100F2264439C200166FD4 /* Main.storyboard */; };
+		7D1100F6264439C300166FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D1100F5264439C300166FD4 /* Assets.xcassets */; };
+		7D1100F9264439C300166FD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D1100F7264439C300166FD4 /* LaunchScreen.storyboard */; };
+		7D11010726443C7B00166FD4 /* PokeApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D11010626443C7B00166FD4 /* PokeApiViewController.swift */; };
+		7D11010926443CFA00166FD4 /* ViewModelPokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D11010826443CFA00166FD4 /* ViewModelPokemon.swift */; };
+		7D11010B26443D0C00166FD4 /* Pokedex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D11010A26443D0C00166FD4 /* Pokedex.swift */; };
+		7D11010E26443D3500166FD4 /* ListPokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D11010D26443D3500166FD4 /* ListPokemon.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7D1100EB264439C200166FD4 /* Lab09UIPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab09UIPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1100EE264439C200166FD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D1100F3264439C200166FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7D1100F5264439C300166FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D1100F8264439C300166FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D1100FA264439C300166FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D11010626443C7B00166FD4 /* PokeApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeApiViewController.swift; sourceTree = "<group>"; };
+		7D11010826443CFA00166FD4 /* ViewModelPokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelPokemon.swift; sourceTree = "<group>"; };
+		7D11010A26443D0C00166FD4 /* Pokedex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokedex.swift; sourceTree = "<group>"; };
+		7D11010D26443D3500166FD4 /* ListPokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPokemon.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D1100E8264439C200166FD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D1100E2264439C200166FD4 = {
+			isa = PBXGroup;
+			children = (
+				7D1100ED264439C200166FD4 /* Lab09UIPicker */,
+				7D1100EC264439C200166FD4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D1100EC264439C200166FD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D1100EB264439C200166FD4 /* Lab09UIPicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D1100ED264439C200166FD4 /* Lab09UIPicker */ = {
+			isa = PBXGroup;
+			children = (
+				7D11010526443ADE00166FD4 /* ViewModel */,
+				7D11010426443AD700166FD4 /* Model */,
+				7D11010326443ACF00166FD4 /* View */,
+				7D11010226443AC400166FD4 /* Application */,
+				7D11010126443ABB00166FD4 /* Screens */,
+				7D11010026443AA700166FD4 /* Resources */,
+				7D1100F7264439C300166FD4 /* LaunchScreen.storyboard */,
+				7D1100FA264439C300166FD4 /* Info.plist */,
+			);
+			path = Lab09UIPicker;
+			sourceTree = "<group>";
+		};
+		7D11010026443AA700166FD4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7D1100F5264439C300166FD4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7D11010126443ABB00166FD4 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				7D1100F2264439C200166FD4 /* Main.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		7D11010226443AC400166FD4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7D1100EE264439C200166FD4 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		7D11010326443ACF00166FD4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D11010626443C7B00166FD4 /* PokeApiViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7D11010426443AD700166FD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D11010A26443D0C00166FD4 /* Pokedex.swift */,
+				7D11010D26443D3500166FD4 /* ListPokemon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D11010526443ADE00166FD4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7D11010826443CFA00166FD4 /* ViewModelPokemon.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D1100EA264439C200166FD4 /* Lab09UIPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D1100FD264439C300166FD4 /* Build configuration list for PBXNativeTarget "Lab09UIPicker" */;
+			buildPhases = (
+				7D1100E7264439C200166FD4 /* Sources */,
+				7D1100E8264439C200166FD4 /* Frameworks */,
+				7D1100E9264439C200166FD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab09UIPicker;
+			productName = Lab09UIPicker;
+			productReference = 7D1100EB264439C200166FD4 /* Lab09UIPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D1100E3264439C200166FD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Tecsup;
+				TargetAttributes = {
+					7D1100EA264439C200166FD4 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 7D1100E6264439C200166FD4 /* Build configuration list for PBXProject "Lab09UIPicker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D1100E2264439C200166FD4;
+			productRefGroup = 7D1100EC264439C200166FD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D1100EA264439C200166FD4 /* Lab09UIPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D1100E9264439C200166FD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D1100F9264439C300166FD4 /* LaunchScreen.storyboard in Resources */,
+				7D1100F6264439C300166FD4 /* Assets.xcassets in Resources */,
+				7D1100F4264439C200166FD4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D1100E7264439C200166FD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D11010B26443D0C00166FD4 /* Pokedex.swift in Sources */,
+				7D11010926443CFA00166FD4 /* ViewModelPokemon.swift in Sources */,
+				7D11010726443C7B00166FD4 /* PokeApiViewController.swift in Sources */,
+				7D11010E26443D3500166FD4 /* ListPokemon.swift in Sources */,
+				7D1100EF264439C200166FD4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7D1100F2264439C200166FD4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D1100F3264439C200166FD4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7D1100F7264439C300166FD4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D1100F8264439C300166FD4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D1100FB264439C300166FD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7D1100FC264439C300166FD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D1100FE264439C300166FD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W8AV9P8GXP;
+				INFOPLIST_FILE = Lab09UIPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tecsup.Lab09UIPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D1100FF264439C300166FD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W8AV9P8GXP;
+				INFOPLIST_FILE = Lab09UIPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tecsup.Lab09UIPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D1100E6264439C200166FD4 /* Build configuration list for PBXProject "Lab09UIPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D1100FB264439C300166FD4 /* Debug */,
+				7D1100FC264439C300166FD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D1100FD264439C300166FD4 /* Build configuration list for PBXNativeTarget "Lab09UIPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D1100FE264439C300166FD4 /* Debug */,
+				7D1100FF264439C300166FD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D1100E3264439C200166FD4 /* Project object */;
+}

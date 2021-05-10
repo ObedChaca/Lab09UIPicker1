@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VRQ-He-uE7">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pokemon-->
+        <scene sceneID="Q5u-I8-0mI">
+            <objects>
+                <viewController id="qp1-vQ-poD" customClass="PokeApiViewController" customModule="Lab09UIPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Pi-db-y6S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2g-Rq-pmH">
+                                <rect key="frame" x="20" y="596" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLb-IJ-nA6">
+                                <rect key="frame" x="0.0" y="646" width="414" height="216"/>
+                            </pickerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokeball bg 2" translatesAutoresizingMaskIntoConstraints="NO" id="Hy5-1L-366">
+                                <rect key="frame" x="107" y="250" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="vzW-iE-TVy"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="re3-Vq-tHD">
+                                <rect key="frame" x="117" y="478" width="180" height="34"/>
+                                <color key="backgroundColor" red="0.8901960784313725" green="0.27778831124305725" blue="0.28753781318664551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="H8j-xC-hiA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Elige a tu pokemon">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f2g-Rq-pmH" firstAttribute="leading" secondItem="oMb-gL-W7F" secondAttribute="leading" constant="20" id="7qr-bU-O9f"/>
+                            <constraint firstItem="oMb-gL-W7F" firstAttribute="trailing" secondItem="Hy5-1L-366" secondAttribute="trailing" constant="107" id="8uk-7q-GBL"/>
+                            <constraint firstItem="xLb-IJ-nA6" firstAttribute="top" secondItem="f2g-Rq-pmH" secondAttribute="bottom" constant="20" id="ITn-5W-Dq0"/>
+                            <constraint firstItem="re3-Vq-tHD" firstAttribute="centerX" secondItem="4Pi-db-y6S" secondAttribute="centerX" id="IU1-1U-Yni"/>
+                            <constraint firstItem="oMb-gL-W7F" firstAttribute="trailing" secondItem="f2g-Rq-pmH" secondAttribute="trailing" constant="20" id="Of3-fg-pOo"/>
+                            <constraint firstItem="xLb-IJ-nA6" firstAttribute="leading" secondItem="oMb-gL-W7F" secondAttribute="leading" id="Q8x-4V-ZpS"/>
+                            <constraint firstItem="Hy5-1L-366" firstAttribute="top" secondItem="oMb-gL-W7F" secondAttribute="top" constant="110" id="SDq-Vt-ESg"/>
+                            <constraint firstItem="xLb-IJ-nA6" firstAttribute="bottom" secondItem="oMb-gL-W7F" secondAttribute="bottom" id="Tsu-tl-RKc"/>
+                            <constraint firstItem="re3-Vq-tHD" firstAttribute="top" secondItem="Hy5-1L-366" secondAttribute="bottom" constant="28" id="i2n-eo-S8W"/>
+                            <constraint firstItem="xLb-IJ-nA6" firstAttribute="trailing" secondItem="oMb-gL-W7F" secondAttribute="trailing" id="vY6-Pj-ron"/>
+                            <constraint firstItem="Hy5-1L-366" firstAttribute="leading" secondItem="oMb-gL-W7F" secondAttribute="leading" constant="107" id="wgt-ZG-wdJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oMb-gL-W7F"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pokemon" largeTitleDisplayMode="always" id="Mmk-a0-W04"/>
+                    <connections>
+                        <outlet property="imageView" destination="Hy5-1L-366" id="CwV-4p-kfG"/>
+                        <outlet property="pokeListPicker" destination="xLb-IJ-nA6" id="EpS-Ow-pUg"/>
+                        <outlet property="pokeTextField" destination="f2g-Rq-pmH" id="U6S-JJ-EO5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ByP-wv-qId" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089.8550724637682" y="112.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nG2-oL-QbD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VRQ-He-uE7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="Ljk-UQ-c8r">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.87899027169999999" green="0.15688672519999999" blue="0.16687962109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qp1-vQ-poD" kind="relationship" relationship="rootViewController" id="YZk-8O-fUc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6d5-Hy-dZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="179.71014492753625" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pokeball bg 2" width="407" height="407"/>
+    </resources>
+</document>
